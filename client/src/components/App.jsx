@@ -21,7 +21,7 @@ class App extends React.Component {
     }
 
     componentDidMount () {
-        axios.get('http://ec2-18-224-181-241.us-east-2.compute.amazonaws.com:3131/userinfo')
+        axios.get('/userinfo')
             .then( (data) => {
                 var array = [];
                 for(var i = 0; i<=8; i++){
@@ -30,10 +30,10 @@ class App extends React.Component {
                 this.setState({userPictures: array}, () =>{
                     console.log('state user pictures: ', this.state.userPictures)
                 })
-                
+
             })
 
-            axios.get('http://ec2-18-224-181-241.us-east-2.compute.amazonaws.com:3131/songinfo')
+            axios.get('/songinfo')
                 .then( (data) => {
                     var array = [];
                     data.data.forEach( (songInfoObj) => {
@@ -45,7 +45,7 @@ class App extends React.Component {
                     //     console.log('STATE SONG INFO: ', this.state.songInformation)
                     // })
 
-                    axios.get('http://ec2-18-224-181-241.us-east-2.compute.amazonaws.com:3131/likes')
+                    axios.get('/likes')
                         .then ( (data) => {
                             var count = 0
                             data.data.forEach( (songObj) => {
@@ -58,14 +58,14 @@ class App extends React.Component {
                                 this.setState({likeWord: 'like'})
                             }
                             console.log("STATE LIKES, APP.JSX: ", this.state.likes)
-                            
+
                             // var stateSongInfo = this.state.songInformation.slice();
                             var stateSongInfo = array;
                             stateSongInfo.forEach( (songInfoObj) => {
                                 this.countRelatedTracksLikes(data, songInfoObj)
                             })
-                            
-                            axios.get('http://ec2-18-224-181-241.us-east-2.compute.amazonaws.com:3131/userinfo')
+
+                            axios.get('/userinfo')
                                 .then( (data) => {
                                     console.log('USERINFO: ', data.data)
                                     stateSongInfo.forEach( (songObj) => {
@@ -94,7 +94,7 @@ class App extends React.Component {
                 //             this.setState({likeWord: 'like'})
                 //         }
                 //         // console.log(this.state.likes)
-                        
+
                 //         var stateSongInfo = this.state.songInformation;
                 //         stateSongInfo.forEach( (songInfoObj) => {
                 //             this.countRelatedTracksLikes(data, songInfoObj)
@@ -121,10 +121,10 @@ class App extends React.Component {
                 //     )
 
 
-      ///////////////////////////////////////////////////////////////////////              
+      ///////////////////////////////////////////////////////////////////////
 
-    
-    
+
+
 
     };
 
@@ -182,7 +182,7 @@ class App extends React.Component {
                         <span className='heartLikeBundle'>
                             <span className='heart'>
                                 {/* <img src='/images/heart.png'></img> */}
-                                <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>stats_likes_grey</title><path d="M10.805 3c-2.02 0-2.804 2.345-2.804 2.345S7.213 3 5.196 3C3.494 3 1.748 4.096 2.03 6.514c.344 2.953 5.725 6.479 5.963 6.487.238.008 5.738-3.722 5.988-6.5C14.188 4.201 12.507 3 10.805 3z" fill="#999" fill-rule="evenodd"/></svg>                            </span>
+                                <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>stats_likes_grey</title><path d="M10.805 3c-2.02 0-2.804 2.345-2.804 2.345S7.213 3 5.196 3C3.494 3 1.748 4.096 2.03 6.514c.344 2.953 5.725 6.479 5.963 6.487.238.008 5.738-3.722 5.988-6.5C14.188 4.201 12.507 3 10.805 3z" fill="#999" fillRule="evenodd"/></svg>                            </span>
                             <span className='likeNumber'>{`${this.state.likes} ${this.state.likeWord}`}</span>
                         </span>
                         <span className='likeHeader viewAllLikes'>{'View all'}</span>
@@ -195,7 +195,7 @@ class App extends React.Component {
                                     <Namelist picture={pictureObj} clickProfile={this.onClickProfiles}/>                        )
                                 })}
                         </ul>
-                    </div> 
+                    </div>
                 </div>
             </div>
             </div>
@@ -203,4 +203,4 @@ class App extends React.Component {
     }
 }
 
-export default App; 
+export default App;

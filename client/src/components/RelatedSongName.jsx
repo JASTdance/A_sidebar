@@ -25,7 +25,7 @@ class RelatedSongName extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('http://ec2-18-224-181-241.us-east-2.compute.amazonaws.com:3131/solouser')
+        axios.get('/solouser')
             .then((data) => {
                 console.log(data.data)
                 data.data.forEach( (obj) => {
@@ -46,15 +46,15 @@ class RelatedSongName extends React.Component {
         return(
 
             <div className='relatedArtistName' onMouseEnter={this.showHoverDropDown} onMouseLeave={this.closeHoverDropDown}>{this.props.username}
-            
+
                 {
                     this.state.hoverDown
                         ?(
                             <div>
                                 <div className='notch' ></div>
                                 <div className='relatedNameIconHover'>
-                                    
-                                    <img className= 'roundImage followHover' src={'http://ec2-18-224-181-241.us-east-2.compute.amazonaws.com:3131' + this.state.usernameInfo.user_picture_url} height="70px" width="70px" />
+
+                                    <img className= 'roundImage followHover' src={this.state.usernameInfo.user_picture_url} height="70px" width="70px" />
 
                                     <div className='cardName'>
                                         <div className='followerName relatedFollowerName'  >{this.state.usernameInfo.username}</div>

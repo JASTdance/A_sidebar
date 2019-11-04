@@ -1,1 +1,6 @@
-node_modules/
+node_modules
+ten-million-artist.csv
+ten-million-songs.csv
+ten-million-cassandra.csv
+
+bundle.js
