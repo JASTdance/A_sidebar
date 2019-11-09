@@ -2,5 +2,10 @@ node_modules
 ten-million-artist.csv
 ten-million-songs.csv
 ten-million-cassandra.csv
-
+writeCassandra.js
 bundle.js
+ten-million-postgres.csv
+ten-million-related.csv
+Database Comparison Summary.ods
+writePostgres-with-csv.js
+cassandra.sql

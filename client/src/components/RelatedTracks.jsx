@@ -68,7 +68,7 @@ class RelatedTracks extends React.Component {
                             <div className='relatedArtistNameBox'>
                                 {/* <div className='relatedArtistName'>{this.state.songInformation.username}</div> */}
 
-                                <RelatedSongName username={this.state.songInformation.username} />
+                                <RelatedSongName solouser={this.props.solouser} username={this.state.songInformation.username} />
 
                             </div>
                             <div className='relatedSongNameBox'>
