@@ -3,6 +3,8 @@ import axios from 'axios';
 import Namelist from './Namelist.jsx';
 import RelatedTracks from './RelatedTracks.jsx';
 
+let params = new URLSearchParams(window.location.search);
+
 class App extends React.Component {
     constructor(props){
         super(props);
@@ -18,7 +20,8 @@ class App extends React.Component {
     }
 
     componentDidMount () {
-        axios.get('/related_tracks/1')
+        var id = params.get('song_id');
+        axios.get(`/related_tracks/${id}`)
         .then( (response) => {
             var array = [];
             for (var i = 0; i < response.data.length; i++) {
