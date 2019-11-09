@@ -24,40 +24,15 @@ class RelatedSongName extends React.Component {
         this.setState({hoverDown: false});
     }
 
-
-    // followers: response.data[i].artist_followers,
-    // user_location: "San Francisco",
-    // user_picture_url: response.data[i].artist_picture_url,
-    // username: response.data[i].artist_name,
-    // username_id: i
-
     componentDidMount(){
-        // axios.get('/related_tracks/1')
-            // .then((data) => {
-                // console.log(data.data)
-                this.props.solouser.forEach( (dataObj, idx) => {
-                    // var dataObj = {
-                    //     username_id: idx,
-                    //     username: obj.artist_name,
-                    //     followers: obj.artist_followers,
-                    //     user_picture_url: obj.artist_picture_url,
-                    //     user_location: 'San Francisco',
-                    //     pro_account: true
-                    // }
-                    if(dataObj.username === this.props.username){
-                        this.setState({usernameInfo: dataObj}, ()=>{
-                            console.log('state usernameInfo in RelatedSongName: ', this.state.usernameInfo)
-                        });
-                    }
-                })
-            // })
-            // .then(()=>{
-            //     console.log('state usernameInfo in RelatedSongName: ', this.state.usernameInfo)
-            // })
+        this.props.solouser.forEach( (dataObj, idx) => {
+            if (dataObj.username === this.props.username) {
+                this.setState({ usernameInfo: dataObj })
+            }
+        })
     }
 
     render() {
-        // console.log('props in RelatedSongName: ', this.props)
         return(
 
             <div className='relatedArtistName' onMouseEnter={this.showHoverDropDown} onMouseLeave={this.closeHoverDropDown}>{this.props.username}
