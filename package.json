@@ -12,7 +12,8 @@
     "test": "jest",
     "start": "pm2 start server/index.js -i max",
     "react-dev": "webpack -d --watch",
-    "seed-database": "node seedDb.js"
+    "related-tracks": "node writeRelated.js",
+    "songs": "node writeSong.js"
   },
   "repository": {
     "type": "git",
