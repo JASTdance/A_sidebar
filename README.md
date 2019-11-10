@@ -21,9 +21,20 @@ To implement the semi-static/dynamic sidebar and playlist component for the Soun
  - Node 8.15.0
  - Nvm 6.4.1
  - etc.
- 
+
 ### Development
-```ah
-  npm install -g webpack
-  npm install
 ```
+  npm install
+  npm run webpack -p
+  npm start
+  k6 run script.js
+```
+### Production
+
+  npm install
+  npm run webpack -p
+
+### Stress Testing
+
+  npm start
+  k6 run script.js
