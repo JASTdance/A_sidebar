@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "pm2 start server/index.js -i max",
+    "start": "node NODE_ENV=production server/index.js",
     "react-dev": "webpack -d --watch",
     "related-tracks": "node writeRelated.js",
     "songs": "node writeSong.js"

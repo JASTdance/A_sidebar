@@ -56,30 +56,6 @@ class App extends React.Component {
         })
         .catch((err) => { console.log(err) } )
 
-        // axios.get('/related_tracks/1')
-        // .then( (response) => {
-        //     var result = [];
-        //     response.data.forEach((song, idx) => {
-        //         var obj = {
-        //             category: 'Hip-Hop',
-        //             comments: song.comments,
-        //             likes: song.likes,
-        //             reposts: song.reposts,
-        //             song_id: song.song_id,
-        //             song_picture_url: song.song_picture_url,
-        //             times_played: song.times_played,
-        //             title: song.title,
-        //             username: song.artist_name,
-        //             username_id: idx
-        //         }
-        //         result.push(obj)
-        //     })
-        //     this.setState({
-        //         songInformation: result
-        //     })
-        // })
-        // .catch((err) => { console.log(err) })
-
     };
 
 
