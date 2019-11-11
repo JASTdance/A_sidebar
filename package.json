@@ -10,9 +10,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server/index.js",
+    "start": "node NODE_ENV=production server/index.js",
     "react-dev": "webpack -d --watch",
-    "seed-database": "node seedDb.js"
+    "related-tracks": "node writeRelated.js",
+    "songs": "node writeSong.js"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,9 @@
     "express": "^4.14.0",
     "jquery": "^3.1.1",
     "mysql": "^2.17.1",
+    "newrelic": "^6.1.0",
+    "pg": "^7.12.1",
+    "pg-promise": "^9.3.5",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "reactjs-popup": "^1.5.0",

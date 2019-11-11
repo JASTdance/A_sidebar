@@ -25,24 +25,14 @@ class RelatedSongName extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('/solouser')
-            .then((data) => {
-                console.log(data.data)
-                data.data.forEach( (obj) => {
-                    if(obj.username === this.props.username){
-                        this.setState({usernameInfo: obj}, ()=>{
-                            console.log('state usernameInfo in RelatedSongName: ', this.state.usernameInfo)
-                        });
-                    }
-                })
-            })
-            // .then(()=>{
-            //     console.log('state usernameInfo in RelatedSongName: ', this.state.usernameInfo)
-            // })
+        this.props.solouser.forEach( (dataObj, idx) => {
+            if (dataObj.username === this.props.username) {
+                this.setState({ usernameInfo: dataObj })
+            }
+        })
     }
 
     render() {
-        // console.log('props in RelatedSongName: ', this.props)
         return(
 
             <div className='relatedArtistName' onMouseEnter={this.showHoverDropDown} onMouseLeave={this.closeHoverDropDown}>{this.props.username}

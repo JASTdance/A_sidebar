@@ -5,6 +5,7 @@ import axios from 'axios';
 import Menu from './Menu.jsx'
 import RelatedSongName from './RelatedSongName.jsx'
 
+let params = new URLSearchParams(window.location.search);
 
 class RelatedTracks extends React.Component {
     constructor(props){
@@ -27,26 +28,18 @@ class RelatedTracks extends React.Component {
         }
     }
 
-    postLike (songId, usernameId, likes) {
-            var value = {songId, usernameId, likes};
-            axios.post('/likePost', value)
-                .then( (data) => {
-                    // console.log('Like Posted')
-                    var updatedLikes = value.likes + 1;
-                    // console.log('updated likes: ', updatedLikes)
-                    var songInfoArray = this.state.songInformation;
-                    // console.log('songInfoArray: ', songInfoArray)
-                    songInfoArray.likes = updatedLikes
-
-                    this.setState({songInformation: songInfoArray}, ()=>{
-                        // console.log('new state array: ', this.state.songInformation)
-                    })
-                    console.log('Posted Data: ', data.data)
+    postLike () {
+            var song = this.props.song;
+            song.likes = song.likes + 1;
+            axios.put(`/songinfo/likes/${song.song_id}`, song)
+                .then( (response) => {
+                    this.setState({ songInformation: song })
+                    console.log(response.data)
                 })
+                .catch((err) => { console.log(err) })
         }
 
     render(){
-        // console.log('props in RelatedTracks: ', this.props)
         return(
             <li className='singleTrackContainer'>
                 <div className='singleTrackInformation'>
@@ -68,7 +61,7 @@ class RelatedTracks extends React.Component {
                             <div className='relatedArtistNameBox'>
                                 {/* <div className='relatedArtistName'>{this.state.songInformation.username}</div> */}
 
-                                <RelatedSongName username={this.state.songInformation.username} />
+                                <RelatedSongName solouser={this.props.solouser} username={this.state.songInformation.username} />
 
                             </div>
                             <div className='relatedSongNameBox'>
