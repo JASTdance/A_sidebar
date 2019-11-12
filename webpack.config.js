@@ -23,8 +23,8 @@ module.exports = {
       }
     ]
   },
-  node: {
-    fs: 'empty'
-  }
+  // node: {
+  //   fs: 'empty'
+  // }
 };
 
