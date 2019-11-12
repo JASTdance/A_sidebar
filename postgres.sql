@@ -1,6 +1,6 @@
 CREATE DATABASE soundclout;
 
-USE soundclout;
+\c soundclout;
 
 CREATE TABLE song_info(
     song_id serial PRIMARY KEY,
@@ -19,8 +19,13 @@ CREATE TABLE song_info(
 CREATE TABLE related_tracks(
     id serial PRIMARY KEY,
     song_id INT,
-    related_song_id INT REFERENCES song_info (song_id)
+    related_song_id INT
 );
+
+ALTER TABLE related_tracks ADD CONSTRAINT fk_related_tracks_song_info FOREIGN KEY (related_song_id) REFERENCES song_info (song_id);
+
+CREATE INDEX related_tracks_song_id_idx ON related_tracks(song_id)
+CREATE INDEX related_tracks_related_song_id_idx ON related_tracks(song_id)
 
 COPY related_tracks(song_id, related_song_id) FROM '/home/acrav/soundclout-sidebar-module/ten-million-related.csv' DELIMITER '|';
 

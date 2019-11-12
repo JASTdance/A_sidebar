@@ -2262,3 +2262,235 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":2323,"time":"2019-11-10T01:06:31.690Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
 {"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":2323,"time":"2019-11-10T01:06:31.691Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
 {"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":2323,"time":"2019-11-10T01:06:31.692Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:03.299Z","msg":"Using New Relic for Node.js. Agent version: 6.1.0; Node version: v8.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:03.639Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:03.810Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:03.810Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:05.927Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:05.928Z","msg":"Connected to collector-003.newrelic.com:443 with agent run ID BYjHbmz5ayeBACaZJRa8cIldyiMAAAgBAAAnIQEAABuEAgQWvHCHAwAFNi4xLjAABmhhcmRhYwAOTXkgQXBwbGljYXRpb24.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:05.928Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2529573/applications/381448327","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:05.933Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":60000,\"harvest_limits\":{\"error_event_data\":100,\"custom_event_data\":1000,\"analytic_event_data\":10000}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:05.942Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.944Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.945Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.949Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.950Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.951Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.951Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:10:06.952Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:11:07.015Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:11:07.018Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:11:07.019Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:11:07.019Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:11:07.019Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:11:07.019Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:12:07.018Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:12:07.020Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:12:07.021Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:12:07.021Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:12:07.021Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:12:07.021Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:13:07.018Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:13:07.022Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:13:07.022Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:13:07.022Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:13:07.023Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:13:07.026Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:14:07.022Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:14:07.026Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:14:07.026Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:14:07.026Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:14:07.031Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:14:07.033Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:15:07.025Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:15:07.029Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:15:07.029Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:15:07.029Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:15:07.032Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:15:07.034Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:16:07.027Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:16:07.029Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:16:07.029Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:16:07.030Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:16:07.031Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:16:07.031Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:17:07.031Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:17:07.034Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:17:07.035Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:17:07.035Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:17:07.036Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:17:07.038Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:18:07.035Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:18:07.037Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:18:07.037Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:18:07.037Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:18:07.037Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:18:07.038Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:19:07.038Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:19:07.041Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:19:07.042Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:19:07.042Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:19:07.043Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7044,"time":"2019-11-12T03:19:07.045Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:27.089Z","msg":"Using New Relic for Node.js. Agent version: 6.1.0; Node version: v8.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:27.338Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:27.505Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:27.506Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:29.671Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:29.672Z","msg":"Connected to collector-003.newrelic.com:443 with agent run ID Bd_ePruhOly1ACaZJRa8cIldyiUcAAgBAAAnIQEAAB10AgQWvHCHAwAFNi4xLjAABmhhcmRhYwAOTXkgQXBwbGljYXRpb24.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:29.672Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2529573/applications/381448327","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:29.680Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":60000,\"harvest_limits\":{\"error_event_data\":100,\"custom_event_data\":1000,\"analytic_event_data\":10000}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:29.685Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.686Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.687Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.691Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.692Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.693Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.694Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:19:30.695Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:20:30.754Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:20:30.759Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:20:30.760Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:20:30.760Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:20:30.760Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:20:30.764Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:21:30.756Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:21:30.757Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:21:30.758Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:21:30.758Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:21:30.758Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:21:30.758Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:22:30.758Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:22:30.762Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:22:30.762Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:22:30.762Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:22:30.768Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:22:30.771Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:23:30.758Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:23:30.760Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:23:30.760Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:23:30.761Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:23:30.761Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:23:30.761Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:24:30.761Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:24:30.764Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:24:30.764Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:24:30.764Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:24:30.765Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7540,"time":"2019-11-12T03:24:30.765Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:48.397Z","msg":"Using New Relic for Node.js. Agent version: 6.1.0; Node version: v8.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:48.643Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:48.808Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:48.809Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:50.924Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:50.925Z","msg":"Connected to collector-003.newrelic.com:443 with agent run ID BefjGWSmNpXwACaZJRa8cIldyiZIAAgBAAAnIQEAAB62AgQWvHCHAwAFNi4xLjAABmhhcmRhYwAOTXkgQXBwbGljYXRpb24.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:50.925Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2529573/applications/381448327","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:50.931Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":60000,\"harvest_limits\":{\"error_event_data\":100,\"custom_event_data\":1000,\"analytic_event_data\":10000}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:50.939Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.941Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.942Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.946Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.947Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.948Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.949Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7862,"time":"2019-11-12T03:24:51.949Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:13.521Z","msg":"Using New Relic for Node.js. Agent version: 6.1.0; Node version: v8.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:13.767Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:13.948Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:13.949Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:15.934Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:15.935Z","msg":"Connected to collector-003.newrelic.com:443 with agent run ID BT6tH_CxCHtgACaZJRa8cIldyiaEAAgBAAAnIQEAAB78AgQWvHCHAwAFNi4xLjAABmhhcmRhYwAOTXkgQXBwbGljYXRpb24.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:15.935Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2529573/applications/381448327","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:15.939Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":60000,\"harvest_limits\":{\"error_event_data\":100,\"custom_event_data\":1000,\"analytic_event_data\":10000}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:15.948Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.950Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.951Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.956Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.957Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.957Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.958Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:25:16.958Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:26:17.026Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:26:17.031Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:26:17.032Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:26:17.032Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:26:17.035Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:26:17.039Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:27:17.030Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:27:17.033Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:27:17.033Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:27:17.034Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:27:17.034Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:27:17.036Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:28:17.030Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:28:17.034Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:28:17.035Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:28:17.035Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:28:17.035Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:28:17.038Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:29:17.034Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:29:17.036Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:29:17.036Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:29:17.036Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:29:17.037Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:29:17.037Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:30:17.036Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:30:17.039Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:30:17.039Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:30:17.039Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:30:17.039Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:30:17.039Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:31:17.040Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:31:17.042Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:31:17.042Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:31:17.042Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:31:17.043Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:31:17.043Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:32:17.043Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:32:17.047Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:32:17.047Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:32:17.048Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:32:17.048Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:32:17.049Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:33:17.045Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:33:17.048Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:33:17.048Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:33:17.048Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:33:17.048Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:33:17.049Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:34:17.046Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:34:17.048Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:34:17.049Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:34:17.049Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:34:17.049Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:34:17.049Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:35:17.046Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:35:17.049Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:35:17.050Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:35:17.050Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:35:17.050Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:35:17.053Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:36:17.049Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:36:17.051Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:36:17.051Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:36:17.052Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:36:17.052Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:36:17.052Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:37:17.050Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:37:17.052Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:37:17.052Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:37:17.054Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:37:17.054Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:37:17.054Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:38:17.054Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:38:17.056Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:38:17.056Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:38:17.056Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:38:17.056Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:38:17.057Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:39:17.054Z","msg":"metric_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:39:17.056Z","msg":"error_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:39:17.056Z","msg":"error_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:39:17.057Z","msg":"transaction_sample_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:39:17.057Z","msg":"analytic_event_data Aggregator data send.","component":"base_aggregator"}
+{"v":0,"level":30,"name":"newrelic","hostname":"hardac","pid":7932,"time":"2019-11-12T03:39:17.057Z","msg":"custom_event_data Aggregator data send.","component":"base_aggregator"}
