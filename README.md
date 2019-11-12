@@ -31,8 +31,8 @@ To implement the semi-static/dynamic sidebar and playlist component for the Soun
 ### To Seed Database
   - Navigate to postgres database in the terminal
   - Use the DataGen scripts to create the data for Postgres
-       - npm run related (to seed related_tracks table)
-       - npm run songs (to seed song_info table)
+       - node writeRelated.js (to create csv for related_tracks table)
+       - node writeSong.js (to create csv for song_info table)
   - Use the provided postgres.sql to create the database and tables for Postgres
   - Use the scripts to import the data from the newly created Data files into Postgres
        - COPY related_tracks(song_id, related_song_id) FROM '/home/acrav/soundclout-sidebar-module/ten-million-related.csv' DELIMITER '|';
@@ -43,7 +43,8 @@ To implement the semi-static/dynamic sidebar and playlist component for the Soun
 ### Production
 
   npm install
-  npm run webpack -p
+  npm run production
+  npm start (to run node server)
 
 ### Stress Testing
 
