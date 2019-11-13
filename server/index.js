@@ -16,6 +16,15 @@ app.use(cors());
 
 app.use(express.static(__dirname + '/../client/dist'));
 
+app.get('/related_tracks/random', (req, res) => {
+    var text = 'SELECT * FROM related_tracks INNER JOIN song_info ON song_info.song_id = related_tracks.related_song_id WHERE related_tracks.song_id=$1'
+    var randomNum = Math.ceil(Math.random() * Math.floor(10000000))
+    var values = [randomNum];
+    db.query(text, values)
+    .then(data => res.send(data.rows))
+    .catch(err => console.log(err))
+})
+
 app.get('/related_tracks/:id', (req, res) => {
     var text = 'SELECT * FROM related_tracks INNER JOIN song_info ON song_info.song_id = related_tracks.related_song_id WHERE related_tracks.song_id=$1'
     var values = [req.params.id];
