@@ -36,10 +36,11 @@ This module is the related tracks component.
   ** Note the directory after FROM should be the directory where the DataGen files were stored followed by '/ten-million-songs.csv' DELIMITER '|';
 
 ### Production
-
+```
   npm install
   npm run production
   npm start (to run node server)
+```
 
 ### Stress Testing
 

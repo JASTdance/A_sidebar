@@ -1,5 +1,5 @@
 {
-  "name": "soundclout-sidebar-module",
+  "name": "jastdance-related-tracks",
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.js"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahimlaiwalla/soundclout-sidebar-module.git"
+    "url": "git+https://github.com/JASTdance/jastdance-related-tracks.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rahimlaiwalla/soundclout-sidebar-module/issues"
+    "url": "https://github.com/JASTdance/jastdance-related-tracks/issues"
   },
-  "homepage": "https://github.com/rahimlaiwalla/soundclout-sidebar-module#readme",
+  "homepage": "https://github.com/JASTdance/jastdance-related-tracks#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
