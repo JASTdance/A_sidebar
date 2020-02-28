@@ -32,7 +32,7 @@ class Menu extends React.Component{
         return(
             <span className='relatedDropDownMenu'>
                 <span  onClick={this.showMenu}>
-                    <img className='menuRelatedSongImage' src='/images/menu.png' height='12px' width='14px'></img>
+                    <img className='menuRelatedSongImage' src='https://sdc-alex-images.s3-us-west-2.amazonaws.com/menu.png' height='12px' width='14px'></img>
                 </span>
             {
                 this.state.menuOpen

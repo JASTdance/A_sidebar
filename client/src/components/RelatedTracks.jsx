@@ -47,11 +47,11 @@ class RelatedTracks extends React.Component {
                         <span className='rtImageBox' onClick={this.clickChangePlayImage}>
                             <img className='rtImage' src={this.state.songInformation.song_picture_url} height="50px" width="50px" />
                             { !this.state.playImage
-                            ? (<img className='rtImageOverlay' src='/images/playoverlay.png' heigth='30px' width='30px' />
+                            ? (<img className='rtImageOverlay' src='https://sdc-alex-images.s3-us-west-2.amazonaws.com/playoverlay.png' heigth='30px' width='30px' />
                             )
                             :
                             (
-                                <img className='rtImageOverlay' src='/images/pauseOverlay.png' heigth='30px' width='30px' />
+                                <img className='rtImageOverlay' src='https://sdc-alex-images.s3-us-west-2.amazonaws.com/pauseOverlay.png' heigth='30px' width='30px' />
                             )
                             }
                         </span>
@@ -67,7 +67,7 @@ class RelatedTracks extends React.Component {
                                 <div className='relatedSongName'>{this.state.songInformation.title}</div>
                                 <div className='relatedMenuOptions'>
                                     <span className='likeRelatedSong'>
-                                        <img className='likeRelatedSongBlackHeart' src='/images/blackheart.png' height='12px' width='12px' onClick={() => {this.postLike(this.state.songInformation.song_id, this.state.songInformation.username_id, this.state.songInformation.likes)}}></img>
+                                        <img className='likeRelatedSongBlackHeart' src='https://sdc-alex-images.s3-us-west-2.amazonaws.com/blackheart.png' height='12px' width='12px' onClick={() => {this.postLike(this.state.songInformation.song_id, this.state.songInformation.username_id, this.state.songInformation.likes)}}></img>
                                     </span>
                                     <Menu />
                                 </div>

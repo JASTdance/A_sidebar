@@ -20,8 +20,8 @@ class App extends React.Component {
     }
 
     componentDidMount () {
-        var id = params.get('song_id');
-        axios.get(`/related_tracks/${id}`)
+        var ID = params.get('id');
+        axios.get(`/related_tracks/${ID}`)
         .then( (response) => {
             var array = [];
             for (var i = 0; i < response.data.length; i++) {
