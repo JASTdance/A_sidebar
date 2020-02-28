@@ -11,4 +11,7 @@ writePostgres-with-csv.js
 cassandra.sql
 database/reference.js
 newrelic.js
-client/dist/loaderio-bb89f795937f4e2594545831280902a7.html
+client/dist/loaderio-b39d06597f56fc39f3915c9131f2cbda.html
+oldnginx.conf
+nginx.conf
+package-lock.json
