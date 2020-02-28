@@ -1,12 +1,7 @@
-# Sidebar-module
+# Related Tracks Module
 
-To implement the semi-static/dynamic sidebar and playlist component for the SoundClout web application.
-
-## Related Projects
-
- - https://github.com/4-ever-young/soundclout-active-player-module.git
- - https://github.com/4-ever-young/soundclout-info-comments-module.git
- - https://github.com/4-ever-young/soundclout-active-display-module
+JASTdance is a streaming music service with song display, active player, related tracks, and song comments modules.
+This module is the related tracks component.
 
 ### Usage
 
