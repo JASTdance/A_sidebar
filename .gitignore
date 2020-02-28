@@ -15,3 +15,4 @@ client/dist/loaderio-b39d06597f56fc39f3915c9131f2cbda.html
 oldnginx.conf
 nginx.conf
 package-lock.json
+newrelic_agent.log
