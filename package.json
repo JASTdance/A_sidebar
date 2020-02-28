@@ -1,5 +1,5 @@
 {
-  "name": "soundclout-sidebar-module",
+  "name": "jastdance-related-tracks",
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.js"
@@ -9,52 +9,38 @@
   "description": "To implement the semi-static/dynamic sidebar and playlist component for the SoundClout web application.",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "node NODE_ENV=production server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
     "react-dev": "webpack -d --watch",
-    "related-tracks": "node writeRelated.js",
-    "songs": "node writeSong.js"
+    "production": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahimlaiwalla/soundclout-sidebar-module.git"
+    "url": "git+https://github.com/JASTdance/jastdance-related-tracks.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rahimlaiwalla/soundclout-sidebar-module/issues"
+    "url": "https://github.com/JASTdance/jastdance-related-tracks/issues"
   },
-  "homepage": "https://github.com/rahimlaiwalla/soundclout-sidebar-module#readme",
+  "homepage": "https://github.com/JASTdance/jastdance-related-tracks#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
-    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-export-extensions": "^6.22.0",
-    "cors": "^2.8.5",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "jest": "^24.9.0",
-    "jest-cli": "^24.9.0",
-    "nodemon": "^1.19.3",
-    "react-test-renderer": "^16.10.2",
     "webpack": "^4.41.1",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "jquery": "^3.1.1",
-    "mysql": "^2.17.1",
     "newrelic": "^6.1.0",
     "pg": "^7.12.1",
-    "pg-promise": "^9.3.5",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "reactjs-popup": "^1.5.0",
-    "request": "^2.75.0"
+    "cors": "^2.8.5"
   }
 }

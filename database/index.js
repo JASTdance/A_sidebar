@@ -1,11 +1,12 @@
 const { Pool } = require('pg');
+const reference = require('./reference.js');
 
 const pool = new Pool({
-  host: 'localhost',
-  user: 'postgres',
-  database: 'soundclout',
-  password: 'acrav',
-  port: 5432
+  host: reference.host,
+  user: reference.user,
+  database: reference.database,
+  password: reference.password,
+  port: reference.port
 });
 
 pool.on('error', (err, client) => {

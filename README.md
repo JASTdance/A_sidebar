@@ -1,12 +1,7 @@
-# Sidebar-module
+# Related Tracks Module
 
-To implement the semi-static/dynamic sidebar and playlist component for the SoundClout web application.
-
-## Related Projects
-
- - https://github.com/4-ever-young/soundclout-active-player-module.git
- - https://github.com/4-ever-young/soundclout-info-comments-module.git
- - https://github.com/4-ever-young/soundclout-active-display-module
+JASTdance is a streaming music service with song display, active player, related tracks, and song comments modules.
+This module is the related tracks component.
 
 ### Usage
 
@@ -22,17 +17,11 @@ To implement the semi-static/dynamic sidebar and playlist component for the Soun
  - Nvm 6.4.1
  - etc.
 
-### Development
-```
-  npm install
-  npm run webpack -p
-  npm start
-```
 ### To Seed Database
   - Navigate to postgres database in the terminal
   - Use the DataGen scripts to create the data for Postgres
-       - npm run related (to seed related_tracks table)
-       - npm run songs (to seed song_info table)
+       - node writeRelated.js (to create csv for related_tracks table)
+       - node writeSong.js (to create csv for song_info table)
   - Use the provided postgres.sql to create the database and tables for Postgres
   - Use the scripts to import the data from the newly created Data files into Postgres
        - COPY related_tracks(song_id, related_song_id) FROM '/home/acrav/soundclout-sidebar-module/ten-million-related.csv' DELIMITER '|';
@@ -41,9 +30,11 @@ To implement the semi-static/dynamic sidebar and playlist component for the Soun
   ** Note the directory after FROM should be the directory where the DataGen files were stored followed by '/ten-million-songs.csv' DELIMITER '|';
 
 ### Production
-
+```
   npm install
-  npm run webpack -p
+  npm run production
+  npm start (to run node server)
+```
 
 ### Stress Testing
 
