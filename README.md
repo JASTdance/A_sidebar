@@ -17,12 +17,6 @@ This module is the related tracks component.
  - Nvm 6.4.1
  - etc.
 
-### Development
-```
-  npm install
-  npm run webpack -p
-  npm start
-```
 ### To Seed Database
   - Navigate to postgres database in the terminal
   - Use the DataGen scripts to create the data for Postgres
