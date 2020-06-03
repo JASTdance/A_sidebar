@@ -9,10 +9,10 @@ This repo is for the Related Tracks module.
 
 ### Team Members
 
-1. Alex Cravalho - [alexcravalho](https://github.com/alexcravalho) (this is Me) - Related Tracks Module
-2. Jeehyae Dance - [JeehyaeDance](https://github.com/JeehyaeDance) - Active Player Module
-3. Selam Gessese - [sygessese](https://github.com/sygessese) - Information and Comments Module
-4. Thomas Johnson - [thomasij813](https://github.com/thomasij813) - Active Display Module
+* Alex Cravalho - [alexcravalho](https://github.com/alexcravalho) (this is Me) - Related Tracks Module
+* Jeehyae Dance - [JeehyaeDance](https://github.com/JeehyaeDance) - Active Player Module
+* Selam Gessese - [sygessese](https://github.com/sygessese) - Information and Comments Module
+* Thomas Johnson - [thomasij813](https://github.com/thomasij813) - Active Display Module
 
 ### Related Tracks Module Authors
 
@@ -46,7 +46,7 @@ First, navigate to the local directory where you want to host the service.
 
 Next, access the service by cloning the Github repository:
 
-```
+```$bg-gray-dark
 $ git clone https://github.com/JASTdance/related-tracks.git
 ```
 
@@ -80,14 +80,14 @@ This will allow the application to connect to your created postgres database
   ```
   $ node writeRelated.js
   ```
-  - This will create a .csv for the related_tracks table
+  > This will create a .csv for the related_tracks table
   ```
   $ node writeSong.js
   ```
-  - This will create a .csv for the song_info table
+  > This will create a .csv for the song_info table
 
 3. Use the provided postgres.sql to create the database and tables for Postgres
-  - Type the following command into the terminal
+  * Type the following command into the terminal
   ```
   $ node postgres.sql
   ```
@@ -96,14 +96,14 @@ This will allow the application to connect to your created postgres database
   $ COPY related_tracks(song_id, related_song_id) FROM '{project root dir}/ten-million-related.csv' DELIMITER '|';
   $ COPY song_info(title, times_played, reposts, comments, likes, song_picture_url, artist_name, artist_followers, artist_picture_url) FROM '{project root dir}/ten-million-songs.csv' DELIMITER '|';
   ```
-  - Note {project root dir} in the above commands should be replaced with the local project root directory.
-  - You should see a "database complete" message in your terminal.
+  > Note {project root dir} in the above commands should be replaced with the local project root directory.
+  * You should see a "database complete" message in your terminal.
 
 5. Add indexes and foreign keys to speed up queries
 
-  - login to the psql shell with the "soundwave" database
-  - Run the following commands in the psql shell (this might take a few minutes):
-    ```
+  * login to the psql shell with the "soundwave" database
+  * Run the following commands in the psql shell (this might take a few minutes):
+  ```
   $ ALTER TABLE related_tracks ADD CONSTRAINT fk_related_tracks_song_info FOREIGN KEY (related_song_id) REFERENCES song_info (song_id);
   $ CREATE INDEX related_tracks_song_id_idx ON related_tracks(song_id);
   $ CREATE INDEX related_tracks_related_song_id_idx ON related_tracks(song_id);
@@ -114,11 +114,12 @@ This will allow the application to connect to your created postgres database
 * Now you can start the application on [localhost:3000](http://localhost:3000/?id=1) by typing the following command:
   ```
   $ npm start
-    ```
-  - To retrieve Related Tracks for a specific song in the database use this format:
+  ```
+  * To retrieve Related Tracks for a specific song in the database use this format:
     > http://localhost:3000/?id=2000
-  - 3000 refers to the server port and 2000 refers to the song's id number. Try changing the number between 1 and 10 million.
+  * 3000 refers to the server port and 2000 refers to the song's id number. Try changing the number between 1 and 10 million.
 
-Here is an example of what the application looks like:
+Here is an example of what this module looks like:
 
 ![Soundwave Gif](https://alexcravalho-portfolio.s3-us-west-2.amazonaws.com/Soundwavedemo.gif)
+
