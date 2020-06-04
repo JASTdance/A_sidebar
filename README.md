@@ -153,7 +153,7 @@ Here is an example of what this module looks like:
 
 ### Local Stress Testing
 
-To stress test my system locally I used [K6](https://k6.io/docs/test-types/stress-testing). The test I used gradually increases from 1 to 500 virtual users over one minute. Each virtual user makes 1 request per second.
+To stress test my system locally I used [K6](https://k6.io/docs/test-types/stress-testing). The test I used gradually increased from 1 to 500 virtual users over one minute. Each virtual user makes 1 request per second.
 
 * First make sure [K6](https://k6.io/docs/getting-started/installation) is installed on your machine if you want to run the stress test locally.
 
