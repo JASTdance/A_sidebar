@@ -41,13 +41,15 @@ This repo is for the Related Tracks module.
 * Git
 * Node.js
 * npm
+* [K6](https://k6.io/docs/getting-started/installation)
+* PostgreSQL
 
 First, navigate to the local directory where you want to host the service.
 
 Next, access the service by cloning the Github repository:
 
-```$bg-gray-dark
-$ git clone https://github.com/JASTdance/related-tracks.git
+```
+$ git clone https://github.com/SoundwaveMusic/related-tracks.git
 ```
 
 ### Installing
@@ -60,17 +62,46 @@ $ npm run production
 ```
 You must also seed the PostgreSQL database locally. To do this complete the following instructions:
 
-* Use Node to run the local sql file
+#### Create a PostgreSQL database locally
+
+> Note: Make sure you have [PostgreSQL](http://postgresguide.com/setup/install.html) installed on your machine to continue.
+
+* After installation of PostgreSQL, take a look at the **postgres.sql** file in the root of the project directory
+  > This file is a reference for the commands you will need to create the Postgres database
+* Log in to the psql shell with the user and password you made when you installed PostgreSQL
+* Type the following commands into the psql shell in this order:
   ```
-  $ node postgres.sql
+  $ CREATE DATABASE soundwave;
+  $ \c soundwave;
+
+  $ CREATE TABLE song_info(
+    song_id serial PRIMARY KEY,
+    title VARCHAR(100),
+    times_played INT,
+    reposts INT,
+    comments INT,
+    likes INT,
+    song_picture_url VARCHAR(250),
+    artist_name VARCHAR(100),
+    artist_followers INT,
+    artist_picture_url VARCHAR(250)
+    );
+
+  $ CREATE TABLE related_tracks(
+    id serial PRIMARY KEY,
+    song_id INT,
+    related_song_id INT
+    );
   ```
-> This will create the database in psql
+> These commands should create a database named soundwave, use the database, and create the appropriate tables.
+
+* You can now exit the psql shell and continue in the terminal
 
 #### Create a reference.js file
 
 1. Navigate to the *database* directory from the project root directory
 2. Rename **reference.example.js** to **reference.js**
-3. Edit the file to include your psql password instead of the example password
+3. Edit the file to include your psql username and password instead of the example password
 
 This will allow the application to connect to your created postgres database
 
@@ -86,12 +117,7 @@ This will allow the application to connect to your created postgres database
   ```
   > This will create a .csv for the song_info table
 
-3. Use the provided postgres.sql to create the database and tables for Postgres
-  * Type the following command into the terminal
-  ```
-  $ node postgres.sql
-  ```
-4. Use these commands to import the data from the newly created Data files into Postgres
+3. Use these commands to import the data from the newly created Data files into Postgres
   ```
   $ COPY related_tracks(song_id, related_song_id) FROM '{project root dir}/ten-million-related.csv' DELIMITER '|';
   $ COPY song_info(title, times_played, reposts, comments, likes, song_picture_url, artist_name, artist_followers, artist_picture_url) FROM '{project root dir}/ten-million-songs.csv' DELIMITER '|';
@@ -99,7 +125,7 @@ This will allow the application to connect to your created postgres database
   > Note {project root dir} in the above commands should be replaced with the local project root directory.
   * You should see a "database complete" message in your terminal.
 
-5. Add indexes and foreign keys to speed up queries
+4. Add indexes and foreign keys to speed up queries
 
   * login to the psql shell with the "soundwave" database
   * Run the following commands in the psql shell (this might take a few minutes):
@@ -108,7 +134,7 @@ This will allow the application to connect to your created postgres database
   $ CREATE INDEX related_tracks_song_id_idx ON related_tracks(song_id);
   $ CREATE INDEX related_tracks_related_song_id_idx ON related_tracks(song_id);
   ```
-> Now you can use the application optimally
+> Now you can query the data from Postgres optimally
 
 ### To Use Application
 * Now you can start the application on [localhost:3000](http://localhost:3000/?id=1) by typing the following command:
@@ -116,10 +142,43 @@ This will allow the application to connect to your created postgres database
   $ npm start
   ```
   * To retrieve Related Tracks for a specific song in the database use this format:
-    > http://localhost:3000/?id=2000
-  * 3000 refers to the server port and 2000 refers to the song's id number. Try changing the number between 1 and 10 million.
+    > http&#58;//localhost:3000/?id=2000
+  * 3000 refers to the server port and 2000 refers to the song's id number. Try changing the id number between 1 and 10 million.
 
 Here is an example of what this module looks like:
 
 ![Soundwave Gif](https://alexcravalho-portfolio.s3-us-west-2.amazonaws.com/Soundwavedemo.gif)
 
+## Stress Testing
+
+### Local Stress Testing
+
+To stress test my system locally I used [K6](https://k6.io/docs/test-types/stress-testing). The test I used gradually increases from 1 to 500 virtual users over one minute. Each virtual user makes 1 request per second.
+
+* First make sure [K6](https://k6.io/docs/getting-started/installation) is installed on your machine if you want to run the stress test locally.
+
+To stress test the system run the following command in the project root directory:
+  ```
+  $ npm run stress-test
+  ```
+
+Below is an example output of the test:
+
+![K6 Example](https://sdc-alex-images.s3-us-west-2.amazonaws.com/K6-example.webp)
+
+### Cloud Stress Testing
+
+To run Loader.io stress testing suites yourself, you will have to deploy the app and create your own tests at Loader.io. To use loader.io, visit their website: [Loader.io](https://loader.io/)).
+
+Originally I deployed this application using AWS EC2 instances for the database, load balancer, and the microservice. After I deployed the app and the PostgreSQL database to AWS EC2 instances, I seeded the database with over 50 million records then began stress testing with Loader.io to measure performance increases. I ran stress tests that simulate real world web traffic, meaning that some of requests to the database would be cached and some would not. The results are shown below. The average response time remained under 120 ms until 800 rps and the app maintained a 0% error rate until 900 rps.
+
+![Stress Test 800rps](https://sdc-alex-images.s3-us-west-2.amazonaws.com/stress-test-800.webp)
+![Stress Test 900rps](https://sdc-alex-images.s3-us-west-2.amazonaws.com/stress-test-900.webp)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Thanks to [Joshua Elder](https://www.linkedin.com/in/jcelder/) for his support and tips throughout design, implementation and stress testing.
+* Another thanks to my fantastic team who worked so hard on this application!
