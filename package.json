@@ -1,28 +1,29 @@
 {
-  "name": "jastdance-related-tracks",
+  "name": "soundwavemusic-related-tracks",
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.js"
     ]
   },
   "version": "1.0.0",
-  "description": "To implement the semi-static/dynamic sidebar and playlist component for the SoundClout web application.",
+  "description": "To implement the semi-static/dynamic sidebar and playlist component for the Soundwave music web application.",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node server/index.js",
     "react-dev": "webpack -d --watch",
-    "production": "webpack -p"
+    "production": "webpack -p",
+    "stress-test": "k6 run testing/K6-script.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JASTdance/jastdance-related-tracks.git"
+    "url": "git+https://github.com/SoundwaveMusic/related-tracks.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JASTdance/jastdance-related-tracks/issues"
+    "url": "https://github.com/SoundwaveMusic/related-tracks/issues"
   },
-  "homepage": "https://github.com/JASTdance/jastdance-related-tracks#readme",
+  "homepage": "https://github.com/SoundwaveMusic/related-tracks#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
