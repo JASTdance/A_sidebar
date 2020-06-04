@@ -1,6 +1,6 @@
 const reference = {
   host: 'localhost',
-  user: 'postgres',
+  user: 'YOUR_USERNAME',
   database: 'soundwave',
   password: 'YOUR_PASSWORD',
   port: 5432
