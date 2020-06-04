@@ -118,6 +118,7 @@ This will allow the application to connect to your created postgres database
   > This will create a .csv for the song_info table
 
 3. Use these commands to import the data from the newly created Data files into Postgres
+  * First login to the psql shell with same user and password as before. Make sure to use the soundwave database. Run these commands from psql:
   ```
   $ COPY related_tracks(song_id, related_song_id) FROM '{project root dir}/ten-million-related.csv' DELIMITER '|';
   $ COPY song_info(title, times_played, reposts, comments, likes, song_picture_url, artist_name, artist_followers, artist_picture_url) FROM '{project root dir}/ten-million-songs.csv' DELIMITER '|';
@@ -127,7 +128,7 @@ This will allow the application to connect to your created postgres database
 
 4. Add indexes and foreign keys to speed up queries
 
-  * login to the psql shell with the "soundwave" database
+  * Make sure you are still logged in to the psql shell with the "soundwave" database
   * Run the following commands in the psql shell (this might take a few minutes):
   ```
   $ ALTER TABLE related_tracks ADD CONSTRAINT fk_related_tracks_song_info FOREIGN KEY (related_song_id) REFERENCES song_info (song_id);
@@ -168,7 +169,7 @@ Below is an example output of the test:
 
 ### Cloud Stress Testing
 
-To run Loader.io stress testing suites yourself, you will have to deploy the app and create your own tests at Loader.io. To use loader.io, visit their website: [Loader.io](https://loader.io/)).
+To run Loader.io stress testing suites yourself, you will have to deploy the app and create your own tests at Loader.io. To use Loader.io, visit their website: [Loader.io](https://loader.io/)).
 
 Originally I deployed this application using AWS EC2 instances for the database, load balancer, and the microservice. After I deployed the app and the PostgreSQL database to AWS EC2 instances, I seeded the database with over 50 million records then began stress testing with Loader.io to measure performance increases. I ran stress tests that simulate real world web traffic, meaning that some of requests to the database would be cached and some would not. The results are shown below. The average response time remained under 120 ms until 800 rps and the app maintained a 0% error rate until 900 rps.
 
